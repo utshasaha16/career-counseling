@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/Vw99Dm1/Career-Counseling-Sessions.jpg",
+      "serviceName": "Career Counseling Sessions",
+      "category": "Online",
+      "description": "Our personalized career counseling sessions are designed to help you navigate complex career decisions. Whether you’re starting fresh, transitioning to a new field, or looking to grow within your current role, these sessions provide actionable insights, clarity, and a roadmap tailored to your professional aspirations.",
+      "price": 120,
+      "duration": {
+        "date": "2024-12-05",
+        "time": "5:00 PM - 6:00 PM"
+      },
+      "counselor": "Dr. Emily Smith",
+      "rating": 4.9
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/fvr5G9z/Resume-Review.jpg",
+      "serviceName": "Resume Review",
+      "category": "Offline",
+      "description": "A well-structured and impactful resume can significantly increase your chances of landing your dream job. In this service, our experts meticulously review your resume, offering detailed feedback on structure, language, formatting, and content to ensure it aligns with industry standards and highlights your strengths effectively.",
+      "price": 60,
+      "duration": {
+        "date": "2024-12-10",
+        "time": "3:00 PM - 4:00 PM"
+      },
+      "counselor": "Mr. John Doe",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/4scgKp7/Group-Career-Workshop.jpg",
+      "serviceName": "Group Career Workshop",
+      "category": "Group",
+      "description": "This interactive group workshop is ideal for those seeking to explore career strategies in a collaborative environment. Engage in group discussions, share experiences, and gain insights on topics such as job market trends, career advancement strategies, and professional networking techniques.",
+      "price": 80,
+      "duration": {
+        "date": "2024-12-12",
+        "time": "10:00 AM - 12:00 PM"
+      },
+      "counselor": "Ms. Sarah Johnson",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/ZJ5YmGj/Mock-Interview-Practice.jpg",
+      "serviceName": "Mock Interview Practice",
+      "category": "Online",
+      "description": "Prepare for job interviews with confidence through our mock interview practice sessions. Conducted by experienced professionals, these sessions simulate real-world interview scenarios and provide constructive feedback on your performance, including body language, communication skills, and answering techniques.",
+      "price": 90,
+      "duration": {
+        "date": "2024-12-07",
+        "time": "11:00 AM - 12:00 PM"
+      },
+      "counselor": "Mr. Kevin Brown",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/8jTSctc/Personal-Branding-Strategy.jpg",
+      "serviceName": "Personal Branding Strategy",
+      "category": "Online",
+      "description": "In today’s competitive job market, a strong personal brand is essential. This session focuses on helping you create a distinct and compelling personal brand that aligns with your professional goals. Learn how to effectively communicate your value and stand out from the crowd.",
+      "price": 100,
+      "duration": {
+        "date": "2024-12-15",
+        "time": "4:00 PM - 5:30 PM"
+      },
+      "counselor": "Dr. Emily Smith",
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/RHzN5bw/Networking-Strategies.jpg",
+      "serviceName": "Networking Strategies",
+      "category": "Group",
+      "description": "Effective networking is key to professional growth. This group session provides insights into building meaningful professional relationships, both online and offline. Participants will learn strategies for maintaining connections, leveraging LinkedIn, and confidently approaching industry professionals.",
+      "price": 70,
+      "duration": {
+        "date": "2024-12-20",
+        "time": "2:00 PM - 3:30 PM"
+      },
+      "counselor": "Ms. Sarah Johnson",
+      "rating": 4.7
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co.com/6H5G7Qw/Career-Goal-Setting-Workshop.jpg",
+      "serviceName": "Career Goal-Setting Workshop",
+      "category": "Offline",
+      "description": "Turn your career aspirations into actionable goals in this hands-on workshop. Through expert guidance and practical exercises, you’ll identify your career objectives, prioritize them effectively, and develop a clear plan to achieve success. Ideal for individuals at any stage of their career.",
+      "price": 85,
+      "duration": {
+        "date": "2024-12-18",
+        "time": "9:00 AM - 10:30 AM"
+      },
+      "counselor": "Mr. John Doe",
+      "rating": 4.5
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co.com/yQYz6bG/Skill-Development-Bootcamp.jpg",
+      "serviceName": "Skill Development Bootcamp",
+      "category": "Group",
+      "description": "This intensive bootcamp is designed to help you build essential skills for career success. Topics include leadership, communication, critical thinking, and teamwork. Gain practical insights and techniques that can be immediately applied in professional settings to enhance your effectiveness.",
+      "price": 150,
+      "duration": {
+        "date": "2024-12-22",
+        "time": "1:00 PM - 4:00 PM"
+      },
+      "counselor": "Dr. Emily Smith",
+      "rating": 4.9
+    }
+  ]
+  
