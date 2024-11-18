@@ -5,6 +5,9 @@ import About from "../components/About/About";
 import ContactUs from "../components/ContactUs/ContactUs";
 import MyProfile from "../components/MyProfile/MyProfile";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import AuthLayout from "../AuthLayout/AuthLayout";
+import LogIn from "../components/LogIn/LogIn";
+import Register from "../components/Register/Register";
 
 
 
@@ -32,6 +35,20 @@ const router = createBrowserRouter ([
             {
                 path: "/myProfile",
                 element: <MyProfile></MyProfile>
+            }
+        ]
+    },
+    {
+        path: "/auth",
+        element: <AuthLayout></AuthLayout>,
+        children: [
+            {
+                path: "/auth/logIn",
+                element: <LogIn></LogIn>
+            },
+            {
+                path: "/auth/register",
+                element: <Register></Register>
             }
         ]
     }
