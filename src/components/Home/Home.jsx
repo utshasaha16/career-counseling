@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import { useLoaderData } from 'react-router-dom';
 import Services from '../ServicesCard/Services';
 import Header from '../Header/Header';
+import OurProcess from '../OurProcess/OurProcess';
 
 const Home = () => {
     const data = useLoaderData()
@@ -17,6 +18,7 @@ const Home = () => {
                 }
             </div>
             </div>
+            <OurProcess></OurProcess>
         </div>
     );
 };

@@ -18,7 +18,7 @@ const Services = ({ service }) => {
         </div>
         <h3 className="text-lg font-semibold mt-3">{serviceName}</h3>
         <p className="font-medium mt-3">Price: ${price}</p>
-        <div className="mt-3">
+        <div className="mt-5">
         <Link to={`/serviceDetails/${id}`} className="px-10 py-2 bg-[#E09D15] rounded-lg text-white">Learn More</Link>
         </div>
       </div>
