@@ -8,6 +8,8 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AuthLayout from "../AuthLayout/AuthLayout";
 import LogIn from "../components/LogIn/LogIn";
 import Register from "../components/Register/Register";
+import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -51,6 +53,18 @@ const router = createBrowserRouter ([
                 element: <Register></Register>
             }
         ]
+    },
+    {
+        path: "/serviceDetails/:id",
+        element: <PrivateRoute>
+            <ServiceDetails></ServiceDetails>
+        </PrivateRoute>,
+        loader:async ({params}) => {
+            const res = await fetch("/careerCounseling.json")
+            const data = await res.json()
+            const singleData = data.find(d => d.id == params.id)
+            return singleData
+        }
     }
 ])
 

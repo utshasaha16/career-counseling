@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 
 const Register = () => {
-    const { createNewUser, setUser, googleLogin } = useContext(AuthContext);
+    const { createNewUser, setUser, googleLogin, updateUserProfile } = useContext(AuthContext);
     const [error, setError] = useState("")
+    const navigate = useNavigate()
     const handleRegisterFormSubmit = (e) => {
         e.preventDefault();
         setError("")
@@ -32,7 +33,13 @@ const Register = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user)
-                
+                updateUserProfile({displayName: name, photoURL: photo})
+                .then(() => {
+                    navigate("/")
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
             })
             .catch((er) => {
                 const errorCode = er.code;
