@@ -45,7 +45,7 @@ const ServiceDetails = () => {
                         </div>
                         <div className="divider"></div>
                     <div className="mt-5">
-                        <h3 className="text-lg font-semibold">Submitted Comments:</h3>
+                        <h3 className="text-lg font-semibold">Submitted Feedbacks:</h3>
                         {comments.length > 0 ? (
                             <ul className="mt-3 list-disc list-inside">
                                 {comments.map((comment, index) => (

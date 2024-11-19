@@ -1,11 +1,13 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import { FaGoogle } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Register = () => {
     const { createNewUser, setUser, googleLogin, updateUserProfile } = useContext(AuthContext);
     const [error, setError] = useState("")
+    const [showPassword, setShowPassword] = useState(false)
     const navigate = useNavigate()
     const handleRegisterFormSubmit = (e) => {
         e.preventDefault();
@@ -15,15 +17,15 @@ const Register = () => {
         const photo = form.get("photo");
         const email = form.get("email");
         const password = form.get("password");
-        if(password.length <6){
+        if (password.length < 6) {
             setError("Password must at least 6 characters")
             return;
         }
-        if(!/[a-z]/.test(password)){
+        if (!/[a-z]/.test(password)) {
             setError("Password must at least one lowercase")
             return;
         }
-        if(!/[A-Z]/.test(password)){
+        if (!/[A-Z]/.test(password)) {
             setError("Password must at least one uppercase")
             return;
         }
@@ -33,18 +35,17 @@ const Register = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user)
-                updateUserProfile({displayName: name, photoURL: photo})
-                .then(() => {
-                    navigate("/")
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+                toast.success("Successfully Register!")
+                updateUserProfile({ displayName: name, photoURL: photo })
+                    .then(() => {
+                        navigate("/")
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    })
             })
-            .catch((er) => {
-                const errorCode = er.code;
-                const errorMessage = er.message;
-                console.log(errorCode, errorMessage);
+            .catch((err) => {
+                toast.warn("Registration Failed! Please check your email and password")
             });
     };
     return (
@@ -93,17 +94,20 @@ const Register = () => {
                             required
                         />
                     </div>
-                    <div className="form-control">
+                    <div className="form-control relative">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
                         <input
-                            type="text"
+                            type={showPassword ? 'text' : 'password'}
                             name="password"
                             placeholder="password"
                             className="input input-bordered"
                             required
                         />
+                        <button onClick={() => setShowPassword(!showPassword)} className="btn btn-xs absolute right-4 top-12">{
+                            showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                            }</button>
                     </div>
                     {error && <p className="text-red-600">{error}</p>}
                     <div className="form-control mt-6">

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
-// import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const LogIn = () => {
   const { userLogin, setUser, googleLogin } = useContext(AuthContext);
@@ -20,11 +20,11 @@ const LogIn = () => {
         const user = result.user;
         setUser(user);
         navigate(location?.state ? location.state : "/")
-        // toast.success("Successfully Logged In!")
+        toast.success("Successfully Logged In!")
       })
       .catch((error) => {
-        // toast.warn("Login Failed! Please check your email and password")
-        alert(error)
+        toast.warn("Login Failed! Please check your email and password")
+        
       });
   };
   return (
