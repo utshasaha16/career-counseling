@@ -25,7 +25,9 @@ const Banner = () => {
         onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
+            <div className="">
             <img className="w-full h-auto p-4" src={sliderImg1} alt="" />
+            </div>
         </SwiperSlide>
         <SwiperSlide>
             <img className="w-full h-auto p-4" src={sliderImg2} alt="" />

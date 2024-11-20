@@ -67,7 +67,7 @@ const LogIn = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn bg-[#3C4483] text-white">Login</button>
           </div>
         </form>
         <div onClick={googleLogin}><button className="btn w-full mb-3 bg-white rounded-full"><FaGoogle></FaGoogle> Google Login</button></div>

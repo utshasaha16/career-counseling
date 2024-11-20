@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="w-[90%] md:w-[80%] mx-auto">
       <footer className="footer text-base-content p-10">
         <aside>
           <h1 className="text-4xl font-extrabold">
@@ -29,9 +29,9 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="text-lg font-medium text-[#3C4483]">Company</h6>
+          <a className="link link-hover">Home</a>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Home</a>
         </nav>
         <nav>
           <h6 className="text-lg font-medium text-[#3C4483]">Legal</h6>

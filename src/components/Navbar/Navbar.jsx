@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="navbar-end">
           {
             user && user?.email ? <div className="mr-2 relative group"><img className="w-12 h-12 rounded-full cursor-pointer" src={user?.photoURL} alt="" />
-            <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-gray-500 text-white text-sm rounded-lg shadow-lg opacity-0 group-hover:opacity-100 p-2 z-10 transition-opacity duration-300">
+            <div className="absolute left-1/2 -translate-x-1/2 mt-2  bg-gray-400 text-white text-sm rounded-lg shadow-lg opacity-0 group-hover:opacity-100 p-2 z-10 transition-opacity duration-300">
               <p className="text-center">{user.displayName}</p>
             </div>
             </div> : ""

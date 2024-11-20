@@ -111,7 +111,7 @@ const Register = () => {
                     </div>
                     {error && <p className="text-red-600">{error}</p>}
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Register</button>
+                        <button className="btn bg-[#3C4483] text-white">Register</button>
                     </div>
                 </form>
                 <div onClick={googleLogin}><button className="btn w-full mb-3 bg-white rounded-full"><FaGoogle></FaGoogle> Google Login</button></div>

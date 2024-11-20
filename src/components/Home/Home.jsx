@@ -4,20 +4,25 @@ import { useLoaderData } from 'react-router-dom';
 import Services from '../ServicesCard/Services';
 import Header from '../Header/Header';
 import OurProcess from '../OurProcess/OurProcess';
+import FeaturedService from '../FeaturedService/FeaturedService';
 
 const Home = () => {
     const data = useLoaderData()
     return (
         <div>
+            <header className='mt-10'>
+            <Header></Header>
+            </header>
             <Banner></Banner>
-            <div className='mt-10'>
+            <section className='mt-10'>
                 <Header></Header>
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-5 lg:w-[80%] mx-auto pt-10'>
+            <div className='grid md:grid-cols-3 grid-cols-1 gap-5 lg:w-[80%] md:w-[90%] mx-auto pt-10 pb-20'>
                 {
                     data.map(service => <Services key={service.id} service={service}></Services>)
                 }
             </div>
-            </div>
+            </section>
+            <FeaturedService></FeaturedService>
             <OurProcess></OurProcess>
         </div>
     );
