@@ -8,7 +8,6 @@ const LogIn = () => {
   const { userLogin, setUser, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate()
-  console.log(location);
   const handleLogInForm = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);

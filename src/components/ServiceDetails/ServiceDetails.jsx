@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ const ServiceDetails = () => {
     const [comments, setComments] = useState([])
     const handleSubmitFeedback = () => {
         setComments([...comments, feedback])
-        setFeedback("")
+        setFeedback(feedback)
     }
     return (
         <div>
@@ -24,7 +24,7 @@ const ServiceDetails = () => {
                             src={image}
                             alt="career counseling image" />
                     </figure>
-                    <div className="">
+                    <div>
                         <h1 className="card-title mt-3">{counselor}</h1>
                         <div className="flex gap-5 items-center mt-3">
                         <h2 className="font-semibold">{serviceName}</h2>
@@ -45,7 +45,7 @@ const ServiceDetails = () => {
                         </div>
                         <div className="divider"></div>
                     <div className="mt-5">
-                        <h3 className="text-lg font-semibold">Submitted Feedbacks:</h3>
+                        <h3 className="text-lg font-semibold">Provided Feedbacks:</h3>
                         {comments.length > 0 ? (
                             <ul className="mt-3 list-disc list-inside">
                                 {comments.map((comment, index) => (
@@ -58,6 +58,10 @@ const ServiceDetails = () => {
                             <p className="text-gray-500 mt-3">No comments yet. Be the first to provide feedback!</p>
                         )}
                     </div>
+                    </div>
+                    <div className="divider"></div>
+                    <div className="flex pt-4 justify-center">
+                    <Link to="/"><button className="mt-3 px-10 py-2 bg-[#E09D15] rounded-lg text-white">Back to home</button></Link>
                     </div>
                 </div>
             </main>
