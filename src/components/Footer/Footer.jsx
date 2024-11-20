@@ -2,8 +2,8 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-[90%] md:w-[80%] mx-auto">
-      <footer className="footer text-base-content p-10">
+    <div className="w-[90%] md:w-[80%] mx-auto ">
+      <footer className="footer text-base-content pb-10">
         <aside>
           <h1 className="text-4xl font-extrabold">
             <span className="text-[#E09D15]">Career</span>{" "}

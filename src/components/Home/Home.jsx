@@ -10,20 +10,29 @@ const Home = () => {
     const data = useLoaderData()
     return (
         <div>
-            <header className='mt-10'>
-            <Header></Header>
-            </header>
-            <Banner></Banner>
-            <section className='mt-10'>
+            <header className='pt-24'>
                 <Header></Header>
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-5 lg:w-[80%] md:w-[90%] mx-auto pt-10 pb-20'>
-                {
-                    data.map(service => <Services key={service.id} service={service}></Services>)
-                }
-            </div>
-            </section>
-            <FeaturedService></FeaturedService>
-            <OurProcess></OurProcess>
+            </header>
+            <main>
+                <section className='pt-24'>
+                <Banner></Banner>
+                </section>
+                <section className='pt-24'>
+                    <FeaturedService></FeaturedService>
+                </section>
+                <section className='pt-24'>
+                    <Header></Header>
+                    </section>
+                    <div className='grid md:grid-cols-3 grid-cols-1 gap-5 lg:w-[80%] md:w-[90%] mx-auto pt-24'>
+                        {
+                            data.map(service => <Services key={service.id} service={service}></Services>)
+                        }
+                    </div>
+                
+                <section className='py-24'>
+                <OurProcess></OurProcess>
+                </section>
+            </main>
         </div>
     );
 };

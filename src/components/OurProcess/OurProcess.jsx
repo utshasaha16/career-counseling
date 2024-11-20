@@ -2,7 +2,7 @@
 
 const OurProcess = () => {
     return (
-        <div className="lg:w-[80%] md:w-[90%] mx-auto py-12">
+        <div className="lg:w-[80%] md:w-[90%] mx-auto">
             <h2 className="font-medium text-lg pb-5">Our Process</h2>
             <h1 className="md:text-4xl font-semibold pb-5 text-[#3C4483]">Step-by-Step Guidance to Your Success</h1>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-3">

@@ -12,28 +12,27 @@ import sliderImg3 from '../../assets/slider_Img_3.jpg'
 
 const Banner = () => {
   return (
-    <div className="pt-10 w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto">
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, A11y]}
         spaceBetween={10}
         slidesPerView={2}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
             <div className="">
-            <img className="w-full h-auto p-4" src={sliderImg1} alt="" />
+            <img className="w-full h-auto rounded-2xl" src={sliderImg1} alt="" />
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <img className="w-full h-auto p-4" src={sliderImg2} alt="" />
+            <img className="w-full h-auto rounded-2xl" src={sliderImg2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img className="w-full h-auto p-4" src={sliderImg3} alt="" />
+            <img className="w-full h-auto rounded-2xl" src={sliderImg3} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
