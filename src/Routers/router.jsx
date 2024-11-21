@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/Home/Home";
 import MainLayout from "../components/MainLayout/MainLayout";
 import About from "../components/About/About";
-import ContactUs from "../components/ContactUs/ContactUs";
 import MyProfile from "../components/MyProfile/MyProfile";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AuthLayout from "../AuthLayout/AuthLayout";
@@ -28,8 +27,8 @@ const router = createBrowserRouter ([
                 loader: () => fetch("/careerCounseling.json")
             },
             {
-                path: "/contact",
-                element: <ContactUs></ContactUs>
+                path: "/about",
+                element: <About></About>
             },
             {
                 path: "/myProfile",
