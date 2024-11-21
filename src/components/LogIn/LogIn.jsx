@@ -60,7 +60,7 @@ const LogIn = () => {
               required
             />
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+              <a href="/forgetPassword" className="label-text-alt link link-hover">
                 Forgot password?
               </a>
             </label>
@@ -69,7 +69,7 @@ const LogIn = () => {
             <button className="btn bg-[#3C4483] text-white">Login</button>
           </div>
         </form>
-        <div onClick={googleLogin}><button className="btn w-full mb-3 bg-white rounded-full"><FaGoogle></FaGoogle> Google Login</button></div>
+        <div ><Link to="/"><button onClick={googleLogin} className="btn w-full mb-3 bg-white rounded-full"><FaGoogle></FaGoogle> Google Login</button></Link></div>
         <p className="text-center font-semibold">
           Don't Have An Account ?{" "}
           <Link to="/auth/register" className="text-[#E09D15]">

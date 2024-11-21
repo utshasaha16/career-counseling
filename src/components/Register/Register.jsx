@@ -114,7 +114,7 @@ const Register = () => {
                         <button className="btn bg-[#3C4483] text-white">Register</button>
                     </div>
                 </form>
-                <div onClick={googleLogin}><button className="btn w-full mb-3 bg-white rounded-full"><FaGoogle></FaGoogle> Google Login</button></div>
+                <div><Link to="/"><button onClick={googleLogin} className="btn w-full mb-3 bg-white rounded-full"><FaGoogle></FaGoogle> Google Login</button></Link></div>
                 <p className="text-center font-semibold mb-4">
                     AllReady Have An Account ?{" "}
                     <Link to="/auth/logIn" className="text-[#E09D15]">

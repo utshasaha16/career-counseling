@@ -10,6 +10,7 @@ import LogIn from "../components/LogIn/LogIn";
 import Register from "../components/Register/Register";
 import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
+import ForgetPassword from "../components/ForgetPassword/ForgetPassword";
 
 
 
@@ -27,10 +28,6 @@ const router = createBrowserRouter ([
                 loader: () => fetch("/careerCounseling.json")
             },
             {
-                path: "/about",
-                element: <About></About>
-            },
-            {
                 path: "/contact",
                 element: <ContactUs></ContactUs>
             },
@@ -39,6 +36,10 @@ const router = createBrowserRouter ([
                 element: <PrivateRoute>
                     <MyProfile></MyProfile>
                 </PrivateRoute>
+            },
+            {
+                path: "/forgetPassword",
+                element: <ForgetPassword></ForgetPassword>
             }
         ]
     },
@@ -67,7 +68,7 @@ const router = createBrowserRouter ([
             const singleData = data.find(d => d.id == params.id)
             return singleData
         }
-    }
+    },
 ])
 
 export default router
