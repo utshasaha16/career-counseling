@@ -35,7 +35,7 @@ const FeaturedService = () => {
                         </div>
                         {/* fourth container */}
                         <div className='flex items-center gap-4'>
-                            <div className='w-14 h-10 flex items-center justify-center rounded-full bg-[#E09D15] font-bold text-gray-600'>04</div>
+                            <div className='w-14 h-10  flex items-center justify-center rounded-full bg-[#E09D15] font-bold text-gray-600'>04</div>
                             <div>
                                 <h2 className='text-xl font-semibold'>Interview & Resume Preparation</h2>
                                 <p className='text-sm'>Empower students to make informed career choices with our comprehensive counseling services.</p>
@@ -43,7 +43,7 @@ const FeaturedService = () => {
                         </div>
                     </div>
                 </div>
-                <div className='items-center flex md:relative md:right-10 md:-top-0 relative -top-12 md:pb-10 md:pt-10'>
+                <div className='items-center flex md:relative md:right-10 md:-top-0 relative -top-12 md:pb-14 md:pt-14'>
                     <img className='rounded-3xl w-full h-full' src={counselorImg} alt="" />
                 </div>
             </section>
